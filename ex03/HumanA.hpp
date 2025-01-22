@@ -3,18 +3,21 @@
 
 # include "Weapon.hpp"
 
+#define CYAN "\033[36m"
+#define RESET "\033[0m"
+
 class HumanA
 {
 	private:
 		// Attributes
 		//====================//
 		std::string	_name;
-		Weapon		_weapon;
+		Weapon		&_weapon;
 
 	public:
 		// Constructor & Destructor
 		//====================//
-		HumanA();
+		HumanA(std::string name, Weapon &weapon);
 		~HumanA();
 
 		// Member functions

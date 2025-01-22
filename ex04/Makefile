@@ -1,11 +1,8 @@
-NAME = unnecessaryViolence
+NAME = sedIsForLosers
 CC = c++
 C_FLAGS = -Wall -Werror -Wextra
 
-SRC =	main.cpp\
-		HumanA.cpp\
-		HumanB.cpp\
-		Weapon.cpp
+SRC =	main.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
@@ -20,6 +17,9 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
+customclean: fclean
+	rm -f *.replace
+
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean customclean re

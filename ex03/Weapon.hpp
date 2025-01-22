@@ -14,13 +14,13 @@ class Weapon
 	public:
 		// Constructor & Destructor
 		//====================//
-		Weapon();
+		Weapon(std::string type);
 		~Weapon();
 
 		// Member functions
 		//====================//
-		const std::string&	getType() const;
-		void				setType(std::string &newType);
+		const std::string	&getType() const;
+		void				setType(const std::string &newType);
 };
 
 #endif

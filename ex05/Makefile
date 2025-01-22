@@ -1,11 +1,9 @@
-NAME = unnecessaryViolence
+NAME = harlTwoPointO
 CC = c++
 C_FLAGS = -Wall -Werror -Wextra
 
 SRC =	main.cpp\
-		HumanA.cpp\
-		HumanB.cpp\
-		Weapon.cpp
+		Harl.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
